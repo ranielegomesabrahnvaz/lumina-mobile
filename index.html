@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -66,7 +66,7 @@
             background: #D4AF37;
             border-radius: 4px;
         }
-        
+
         /* Modal Animations */
         #product-modal {
             transition: opacity 0.3s ease;
@@ -101,7 +101,9 @@
                     <a href="#iphone" class="text-gray-300 hover:text-gold-500 transition-colors text-sm font-medium tracking-wide">IPHONE</a>
                     <a href="#xiaomi" class="text-gray-300 hover:text-gold-500 transition-colors text-sm font-medium tracking-wide">XIAOMI</a>
                     <a href="#redmi" class="text-gray-300 hover:text-gold-500 transition-colors text-sm font-medium tracking-wide">REDMI</a>
-                    <a href="#samsung-motorola" class="text-gray-300 hover:text-gold-500 transition-colors text-sm font-medium tracking-wide">SAMSUNG / MOTO</a>
+                    <a href="#samsung" class="text-gray-300 hover:text-gold-500 transition-colors text-sm font-medium tracking-wide">SAMSUNG</a>
+                    <a href="#motorola" class="text-gray-300 hover:text-gold-500 transition-colors text-sm font-medium tracking-wide">MOTOROLA</a>
+                    <a href="#oppo" class="text-gray-300 hover:text-gold-500 transition-colors text-sm font-medium tracking-wide">OPPO</a>
                 </div>
             </div>
         </div>
@@ -112,7 +114,7 @@
         <!-- Background Gradient -->
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-dark-700 via-dark-900 to-dark-900 -z-10"></div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/10 rounded-full blur-[120px] -z-10"></div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
                 A Excelência em <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600">Smartphones Premium</span>
@@ -128,7 +130,7 @@
 
     <!-- Seções de Produtos -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-32">
-        
+
         <!-- iPhone Section -->
         <section id="iphone" class="scroll-mt-24">
             <div class="flex items-center gap-4 mb-12">
@@ -162,13 +164,35 @@
             </div>
         </section>
 
-        <!-- Samsung/Motorola Section -->
-        <section id="samsung-motorola" class="scroll-mt-24">
+        <!-- Samsung Section -->
+        <section id="samsung" class="scroll-mt-24">
             <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl font-serif font-bold text-white">Samsung <span class="text-gold-500">&</span> Motorola</h2>
+                <h2 class="text-3xl font-serif font-bold text-white">Linha <span class="text-gold-500">Samsung</span></h2>
                 <div class="h-[1px] bg-gradient-to-r from-gold-500/50 to-transparent flex-grow"></div>
             </div>
-            <div id="grid-samsung-motorola" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div id="grid-samsung" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                 <!-- Produtos injetados via JS -->
+            </div>
+        </section>
+
+        <!-- Motorola Section -->
+        <section id="motorola" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-serif font-bold text-white">Linha <span class="text-gold-500">Motorola</span></h2>
+                <div class="h-[1px] bg-gradient-to-r from-gold-500/50 to-transparent flex-grow"></div>
+            </div>
+            <div id="grid-motorola" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                 <!-- Produtos injetados via JS -->
+            </div>
+        </section>
+
+        <!-- Oppo Section -->
+        <section id="oppo" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-serif font-bold text-white">Linha <span class="text-gold-500">Oppo</span></h2>
+                <div class="h-[1px] bg-gradient-to-r from-gold-500/50 to-transparent flex-grow"></div>
+            </div>
+            <div id="grid-oppo" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                  <!-- Produtos injetados via JS -->
             </div>
         </section>
@@ -194,10 +218,10 @@
     <div id="product-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden-modal">
         <!-- Fundo escuro clicável para fechar -->
         <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()"></div>
-        
+
         <!-- Conteúdo do Modal -->
         <div id="modal-content" class="relative bg-dark-800 border border-gold-500/20 rounded-2xl w-11/12 max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col md:flex-row">
-            
+
             <!-- Botão Fechar -->
             <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-dark-900 rounded-full p-2 z-10 transition">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -214,7 +238,7 @@
             <div class="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-center">
                 <span id="modal-category" class="text-gold-500 text-sm font-semibold tracking-widest uppercase mb-2"></span>
                 <h3 id="modal-title" class="text-2xl md:text-3xl font-serif font-bold text-white mb-4"></h3>
-                
+
                 <div class="prose prose-invert prose-sm mb-8 text-gray-300">
                     <p id="modal-description" class="leading-relaxed"></p>
                 </div>
@@ -240,215 +264,234 @@
          * 🛒 LISTA DE PRODUTOS (EDITE AQUI)
          * ==========================================
          * Adicione, remova ou edite os celulares abaixo.
-         * 
-         * category: 'iphone', 'xiaomi', 'redmi', 'samsung-motorola'
+         *
+         * category: 'iphone', 'xiaomi', 'redmi', 'samsung', 'motorola', 'oppo'
          * images: Coloque a URL da imagem. Pode ser 1 ou mais separadas por vírgula.
          * amazonLink: Cole o seu link de afiliado da Amazon aqui.
          */
         const products = [
             // --- IPHONES ---
             {
-                id: 'ip15',
-                category: 'iphone',
-                name: 'Apple iPhone 15',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 15. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/416MG51rNgL._AC_SL1000_.jpg'],
-                amazonLink: 'https://link.amazon/A00CIfVXC'
-            },
-            {
-                id: 'ip15pro',
-                category: 'iphone',
-                name: 'Apple iPhone 15 Pro',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 15 Pro. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51bNCrZFLjL._AC_SL1000_.jpg'],
-                amazonLink: 'https://link.amazon/B0hqjO9Br'
-            },
-            {
-                id: 'ip16',
-                category: 'iphone',
-                name: 'Apple iPhone 16',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 16. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61ctYsUobKL._AC_SL1500_.jpg'],
-                amazonLink: 'https://link.amazon/B0gqdddKr'
-            },
-            {
-                id: 'ip16e',
-                category: 'iphone',
-                name: 'Apple iPhone 16e',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 16e. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/412RWxKFt8L._AC_SL1000_.jpg'],
-                amazonLink: 'https://link.amazon/B02REie6y'
-            },
-            {
-                id: 'ip16promax',
-                category: 'iphone',
-                name: 'Apple iPhone 16 Pro Max',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 16 Pro Max. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/71WbxLdbGOL._AC_SL1500_.jpg'],
-                amazonLink: 'https://link.amazon/B0evBBbYm'
-            },
-            {
-                id: 'ip17',
-                category: 'iphone',
-                name: 'Apple iPhone 17',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 17. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/41HPi5vrxSL._AC_SL1000_.jpg'],
-                amazonLink: 'https://link.amazon/A01PO4uHO'
-            },
-            {
-                id: 'ip17pro',
-                category: 'iphone',
-                name: 'Apple iPhone 17 Pro',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 17 Pro. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51nj2ICJyeL._AC_SL1000_.jpg'],
-                amazonLink: 'https://link.amazon/B0ey5ZL3Q'
-            },
-            {
-                id: 'ip17e',
-                category: 'iphone',
-                name: 'Apple iPhone 17e',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 17e. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/41Qt5voMacL._AC_SL1000_.jpg'],
-                amazonLink: 'https://link.amazon/B0a0d3aP1'
-            },
-            {
-                id: 'ip18pro',
-                category: 'iphone',
-                name: 'Apple iPhone 18 Pro',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 18 Pro. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/71E-J09sb6L._AC_SL1500_.jpg'],
-                amazonLink: 'https://link.amazon/A0ahclzEf'
-            },
-            {
-                id: 'ip18promax',
-                category: 'iphone',
-                name: 'Apple iPhone 18 Pro Max',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone 18 Pro Max. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
+                id: 'ip18promax', category: 'iphone', name: 'Apple iPhone 18 Pro Max',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 18 Pro Max. Projetado para entregar performance impecável e design sofisticado.',
                 images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/71VG1Qmy2eL._AC_SL1500_.jpg'],
                 amazonLink: 'https://link.amazon/A02hdV6OV'
             },
             {
-                id: 'ipduo',
-                category: 'iphone',
-                name: 'Apple iPhone Duo',
-                description: 'Experimente o ápice da tecnologia com o Apple iPhone Duo. Um aparelho premium desenvolvido para entregar o máximo em performance, design e sofisticação.',
+                id: 'ip18pro', category: 'iphone', name: 'Apple iPhone 18 Pro',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 18 Pro. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/71E-J09sb6L._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/A0ahclzEf'
+            },
+            {
+                id: 'ip17pro', category: 'iphone', name: 'Apple iPhone 17 Pro',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 17 Pro. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51nj2ICJyeL._AC_SL1000_.jpg'],
+                amazonLink: 'https://link.amazon/B0ey5ZL3Q'
+            },
+            {
+                id: 'ip17', category: 'iphone', name: 'Apple iPhone 17',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 17. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/41HPi5vrxSL._AC_SL1000_.jpg'],
+                amazonLink: 'https://link.amazon/A01PO4uHO'
+            },
+            {
+                id: 'ip17e', category: 'iphone', name: 'Apple iPhone 17e',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 17e. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/41Qt5voMacL._AC_SL1000_.jpg'],
+                amazonLink: 'https://link.amazon/B0a0d3aP1'
+            },
+            {
+                id: 'ip16promax', category: 'iphone', name: 'Apple iPhone 16 Pro Max',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 16 Pro Max. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/71WbxLdbGOL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B0evBBbYm'
+            },
+            {
+                id: 'ip16', category: 'iphone', name: 'Apple iPhone 16',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 16. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61ctYsUobKL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B0gqdddKr'
+            },
+            {
+                id: 'ip16e', category: 'iphone', name: 'Apple iPhone 16e',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 16e. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/412RWxKFt8L._AC_SL1000_.jpg'],
+                amazonLink: 'https://link.amazon/B02REie6y'
+            },
+            {
+                id: 'ip15pro', category: 'iphone', name: 'Apple iPhone 15 Pro',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 15 Pro. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51bNCrZFLjL._AC_SL1000_.jpg'],
+                amazonLink: 'https://link.amazon/B0hqjO9Br'
+            },
+            {
+                id: 'ip15', category: 'iphone', name: 'Apple iPhone 15',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone 15. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/416MG51rNgL._AC_SL1000_.jpg'],
+                amazonLink: 'https://link.amazon/A00CIfVXC'
+            },
+            {
+                id: 'ipduo', category: 'iphone', name: 'Apple iPhone Duo',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Apple iPhone Duo. Projetado para entregar performance impecável e design sofisticado.',
                 images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51cnT-AwDqL._AC_SL1000_.jpg'],
                 amazonLink: 'https://link.amazon/B0eDlTSA6'
             },
-            
-            // --- XIAOMI ---
+
+            // --- XIAOMI & POCO ---
             {
-                id: 'poco-c71-preto',
-                category: 'xiaomi',
-                name: 'Xiaomi Poco C71 Preto',
-                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Poco C71 Preto. Projetado para entregar performance impecável e design sofisticado.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/41GTZonlU+L._AC_.jpg'],
-                amazonLink: 'https://link.amazon/B0eKOAeoJ'
+                id: 'pocox8pro', category: 'xiaomi', name: 'Xiaomi Poco X8 Pro Preto',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Poco X8 Pro Preto. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/71-66qSbwBL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B09qR60eL'
             },
             {
-                id: 'poco-c85-preto',
-                category: 'xiaomi',
-                name: 'Xiaomi POCO C85 Preto',
+                id: 'pococ85preto', category: 'xiaomi', name: 'Xiaomi POCO C85 Preto',
                 description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi POCO C85 Preto. Projetado para entregar performance impecável e design sofisticado.',
                 images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/71yf3Am3phL._AC_SL1500_.jpg'],
                 amazonLink: 'https://link.amazon/B033pf95V'
             },
             {
-                id: 'poco-c85-roxo',
-                category: 'xiaomi',
-                name: 'Xiaomi POCO C85 Roxo',
+                id: 'pococ85roxo', category: 'xiaomi', name: 'Xiaomi POCO C85 Roxo',
                 description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi POCO C85 Roxo. Projetado para entregar performance impecável e design sofisticado.',
                 images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51pmYd61pEL._AC_SL1000_.jpg'],
                 amazonLink: 'https://link.amazon/B0e6HGTSj'
             },
             {
-                id: 'poco-c71-ouro',
-                category: 'xiaomi',
-                name: 'Xiaomi Poco C71 Ouro',
+                id: 'pococ71preto', category: 'xiaomi', name: 'Xiaomi Poco C71 Preto',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Poco C71 Preto. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/41GTZonlU+L._AC_.jpg'],
+                amazonLink: 'https://link.amazon/B0eKOAeoJ'
+            },
+            {
+                id: 'pococ71ouro', category: 'xiaomi', name: 'Xiaomi Poco C71 Ouro',
                 description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Poco C71 Ouro. Projetado para entregar performance impecável e design sofisticado.',
                 images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/71p2jmIJAGL._AC_SL1200_.jpg'],
                 amazonLink: 'https://link.amazon/B04AKDsph'
             },
-            {
-                id: 'poco-x8-pro',
-                category: 'xiaomi',
-                name: 'Xiaomi Poco X8 Pro Preto',
-                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Poco X8 Pro Preto. Projetado para entregar performance impecável e design sofisticado.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/71-66qSbwBL._AC_SL1500_.jpg'],
-                amazonLink: 'https://link.amazon/B09qR60eL'
-            },
 
             // --- REDMI ---
             {
-                id: 'redmi-note-15-preto',
-                category: 'redmi',
-                name: 'Xiaomi Redmi Note 15 Preto',
+                id: 'redminote15pro', category: 'redmi', name: 'Xiaomi Redmi Note 15 Pro 5G Preto',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Redmi Note 15 Pro 5G Preto. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61rzdvs0QWL._AC_SL1200_.jpg'],
+                amazonLink: 'https://link.amazon/B06MMWW6U'
+            },
+            {
+                id: 'redminote15preto', category: 'redmi', name: 'Xiaomi Redmi Note 15 Preto',
                 description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Redmi Note 15 Preto. Projetado para entregar performance impecável e design sofisticado.',
                 images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61XgofTTv1L._AC_SL1254_.jpg'],
                 amazonLink: 'https://link.amazon/B0h7zHAsJ'
             },
             {
-                id: 'redmi-15c-black',
-                category: 'redmi',
-                name: 'Xiaomi Redmi 15C Midnight Black',
-                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Redmi 15C Midnight Black. Projetado para entregar performance impecável e design sofisticado.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51xB8ylT59L._AC_SL1200_.jpg'],
-                amazonLink: 'https://link.amazon/B0cv0k5p2'
-            },
-            {
-                id: 'redmi-note-15-azul',
-                category: 'redmi',
-                name: 'Xiaomi Redmi Note 15 Azul',
+                id: 'redminote15azul', category: 'redmi', name: 'Xiaomi Redmi Note 15 Azul',
                 description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Redmi Note 15 Azul. Projetado para entregar performance impecável e design sofisticado.',
                 images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61HiBnVR42L._AC_SL1000_.jpg'],
                 amazonLink: 'https://link.amazon/B0d4tk3VR'
             },
             {
-                id: 'redmi-15c-blue',
-                category: 'redmi',
-                name: 'Xiaomi Redmi 15C Moonlight Blue',
+                id: 'redminote14preto', category: 'redmi', name: 'Xiaomi Redmi Note 14 Midnight Black',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Redmi Note 14 Midnight Black. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61+k2EbgHLL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B0bLWnWRT'
+            },
+            {
+                id: 'redmi15cblue', category: 'redmi', name: 'Xiaomi Redmi 15C Moonlight Blue',
                 description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Redmi 15C Moonlight Blue. Projetado para entregar performance impecável e design sofisticado.',
                 images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/41jRB-O4ljL._AC_.jpg'],
                 amazonLink: 'https://link.amazon/B0bTa2VEg'
             },
             {
-                id: 'redmi-note-15-pro',
-                category: 'redmi',
-                name: 'Xiaomi Redmi Note 15 Pro 5G',
-                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Redmi Note 15 Pro 5G. Projetado para entregar performance impecável e design sofisticado.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61rzdvs0QWL._AC_SL1200_.jpg'],
-                amazonLink: 'https://link.amazon/B06MMWW6U'
-            },
-            {
-                id: 'redmi-note-14-preto',
-                category: 'redmi',
-                name: 'Xiaomi Redmi Note 14 Midnight Black',
-                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Redmi Note 14 Midnight Black. Projetado para entregar performance impecável e design sofisticado.',
-                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61+k2EbgHLL._AC_SL1500_.jpg'],
-                amazonLink: 'https://link.amazon/B0bLWnWRT'
+                id: 'redmi15cblack', category: 'redmi', name: 'Xiaomi Redmi 15C Midnight Black',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Xiaomi Redmi 15C Midnight Black. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51xB8ylT59L._AC_SL1200_.jpg'],
+                amazonLink: 'https://link.amazon/B0cv0k5p2'
             },
 
-            // --- SAMSUNG & MOTOROLA ---
+            // --- SAMSUNG ---
             {
-                id: 's24u',
-                category: 'samsung-motorola',
-                name: 'Samsung Galaxy S24 Ultra',
-                description: 'O futuro é agora com Galaxy AI. O S24 Ultra traz corpo em titânio, tela plana brilhante e a exclusiva S-Pen embutida. Câmera de 200MP para capturar cada detalhe.',
-                images: [
-                    'https://placehold.co/600x800/1e293b/d4af37?text=Galaxy+S24+Ultra',
-                    'https://placehold.co/600x800/0f172a/ffffff?text=S-Pen'
-                ],
-                amazonLink: 'https://amzn.to/SEULINKAQUI_S24U'
+                id: 's25u', category: 'samsung', name: 'Samsung Galaxy S25 Ultra 5G Titânio Prata',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy S25 Ultra 5G Titânio Prata. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61YXJdHicxL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B036Ndg0n'
             },
             {
-                id: 'razr40',
-                category: 'samsung-motorola',
-                name: 'Motorola Razr 40 Ultra',
-                description: 'O flip reinventado. A maior tela externa da categoria para você interagir sem abrir o aparelho. Design icônico, acabamento em couro vegano e fluidez incomparável.',
-                images: [
-                    'https://placehold.co/600x800/1e293b/d4af37?text=Motorola+Razr+40'
-                ],
-                amazonLink: 'https://amzn.to/SEULINKAQUI_RAZR'
+                id: 's25azul', category: 'samsung', name: 'Samsung Galaxy S25 5G Azul',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy S25 5G Azul. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61ypIBTp6vL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/A07WguQOB'
+            },
+            {
+                id: 's25marinho', category: 'samsung', name: 'Samsung Galaxy S25 5G Azul Marinho',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy S25 5G Azul Marinho. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61FupVYWaxL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/A03ldADCV'
+            },
+            {
+                id: 's25feazul', category: 'samsung', name: 'Samsung Galaxy S25 FE 5G Azul',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy S25 FE 5G Azul. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51EzEIVZ3cL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B0ckSrIVa'
+            },
+            {
+                id: 's25fepreto', category: 'samsung', name: 'Samsung Galaxy S25 FE 5G Jet Black',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy S25 FE 5G Jet Black. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51ydsfiGvOL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B0e1Kfmrn'
+            },
+            {
+                id: 'a57', category: 'samsung', name: 'Samsung Galaxy A57 5G Lilás',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy A57 5G Lilás. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51VZg1VWMlL._AC_SL1080_.jpg'],
+                amazonLink: 'https://link.amazon/B05S0EL0G'
+            },
+            {
+                id: 'a37', category: 'samsung', name: 'Samsung Galaxy A37 5G Preto',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy A37 5G Preto. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51ZvK7HQASL._AC_SL1080_.jpg'],
+                amazonLink: 'https://link.amazon/B05LoW198'
+            },
+            {
+                id: 'a36', category: 'samsung', name: 'Samsung Galaxy A36 5G Verde',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy A36 5G Verde. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61FfzcUhK5L._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B0g7sgUCr'
+            },
+            {
+                id: 'a17preto', category: 'samsung', name: 'Samsung Galaxy A17 Preto',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy A17 Preto. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61ldkLk4JYL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B00UnYTzN'
+            },
+            {
+                id: 'a17cinza', category: 'samsung', name: 'Samsung Galaxy A17 Cinza',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy A17 Cinza. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61y6TCvCq8L._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B02KtlM4e'
+            },
+            {
+                id: 'a17azul', category: 'samsung', name: 'Samsung Galaxy A17 Azul',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy A17 Azul. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61ZSc3b4s6L._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B08iJAqRJ'
+            },
+            {
+                id: 'a07verde', category: 'samsung', name: 'Samsung Galaxy A07 Verde',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy A07 Verde. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51G8vgohj0L._AC_SL1000_.jpg'],
+                amazonLink: 'https://link.amazon/B0iQrss55'
+            },
+            {
+                id: 'a07preto', category: 'samsung', name: 'Samsung Galaxy A07 Preto',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy A07 Preto. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61AYtRHD0SL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B01LpotyG'
+            },
+            {
+                id: 'a07violeta', category: 'samsung', name: 'Samsung Galaxy A07 Violeta',
+                description: 'Experimente o ápice da tecnologia e do luxo com o Samsung Galaxy A07 Violeta. Projetado para entregar performance impecável e design sofisticado.',
+                images: ['https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/611lSKgM9LL._AC_SL1500_.jpg'],
+                amazonLink: 'https://link.amazon/B0aiVh6Cg'
             }
         ];
 
@@ -464,7 +507,9 @@
                 'iphone': document.getElementById('grid-iphone'),
                 'xiaomi': document.getElementById('grid-xiaomi'),
                 'redmi': document.getElementById('grid-redmi'),
-                'samsung-motorola': document.getElementById('grid-samsung-motorola')
+                'samsung': document.getElementById('grid-samsung'),
+                'motorola': document.getElementById('grid-motorola'),
+                'oppo': document.getElementById('grid-oppo')
             };
 
             products.forEach(product => {
@@ -478,14 +523,14 @@
                         <div class="relative bg-dark-900 rounded-xl aspect-[4/5] mb-6 overflow-hidden flex items-center justify-center p-4">
                             <!-- Efeito de brilho no hover -->
                             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-                            
+
                             <img src="${mainImage}" alt="${product.name}" class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500 relative z-0">
                         </div>
-                        
+
                         <div class="flex flex-col flex-grow">
                             <h3 class="text-xl font-bold text-white mb-2 font-serif">${product.name}</h3>
                             <p class="text-gray-400 text-sm line-clamp-2 mb-6 flex-grow">${product.description}</p>
-                            
+
                             <button onclick="openModal('${product.id}')" class="w-full py-3 px-4 rounded-lg bg-dark-700 hover:bg-gold-500 text-white hover:text-dark-900 font-semibold transition-colors duration-300 border border-white/10 hover:border-gold-500">
                                 Ver detalhes
                             </button>
@@ -508,9 +553,9 @@
             document.getElementById('modal-title').textContent = product.name;
             document.getElementById('modal-description').textContent = product.description;
             document.getElementById('modal-amazon-link').href = product.amazonLink;
-            
+
             // Categoria (Formatação estética)
-            const catMap = { 'iphone': 'Apple', 'xiaomi': 'Xiaomi', 'redmi': 'Redmi', 'samsung-motorola': 'Android Premium' };
+            const catMap = { 'iphone': 'Apple', 'xiaomi': 'Xiaomi', 'redmi': 'Redmi', 'samsung': 'Samsung', 'motorola': 'Motorola', 'oppo': 'Oppo' };
             document.getElementById('modal-category').textContent = catMap[product.category];
 
             // Imagens
